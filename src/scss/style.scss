@@ -1,0 +1,65 @@
+@import "_mixins.scss";
+@import "_null.scss";
+@import "_footer";
+@import "_header";
+@import"_fonts";
+@import"_main";
+@import"_grid";
+@import"_partners";
+body {
+    background-color: rgb(255, 255, 255);
+    overflow-x:hidden ;
+}
+* {
+    font-family: lato;
+}
+//<Перемінні>============================================
+$minWidth: 320px;
+$maxWidth: 1920px;
+$maxWidthContainer: 320px;
+$md1: $maxWidthContainer + 12;
+$md2: 991.98px;
+$md3: 767.98px;
+$md4: 479.98px;
+//</Перемінні>============================================
+
+//<Онулення>============================================
+body {
+    color: #000;
+    font-size: 14px;
+    &._lock {
+        overflow: hidden;
+    }
+}
+//</Онулення>============================================
+
+//<Обгортка>=============================================
+.wrapper {
+    width: 100%;
+    min-height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    &._loaded {
+    }
+}
+//</Обгортка>=============================================
+
+//<Основна сітка>=============================================
+._container {
+    max-width: $maxWidthContainer + px;
+    margin: 0 auto;
+    @media (max-width: $md1) {
+        max-width: 970px;
+    }
+    @media (max-width: $md2) {
+        max-width: 750px;
+    }
+    @media (max-width: $md3) {
+        max-width: none;
+        padding: 0 10px;
+    }
+}
+// *{
+//     margin-bottom: 0px;
+// }

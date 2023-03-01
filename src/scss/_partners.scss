@@ -1,0 +1,126 @@
+.partners {
+    width: 100%;
+    display: inline-block;
+}
+.head-partners {
+    height: 390px;
+    width: 100%;
+    display: inline-block;
+    background-image: url(../img/partners/BG-Header.png);
+}
+.our-partners {
+    width: 180px;
+    height: 85px;
+    font-size: 30px;
+    font-weight: 300;
+    margin: 105px auto 1px auto;
+    text-align: center;
+    color: white;
+}
+.row-logo {
+    width: 600px;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 55px auto 0 auto;
+    &__elem {
+        width: 25%;
+    }
+}
+.title_margin-two {
+    font-weight: bold;
+}
+.footer-partners {
+    width: 900px;
+    height: 640px;
+    margin: 140px auto 0 auto;
+}
+.row-contacts {
+    display: flex;
+    flex-direction: row;
+    margin-top: 120px;
+
+    &__form {
+        width: 50%;
+    }
+
+    &__icons {
+        display: flex;
+        flex-direction: column;
+
+        width: 50%;
+    }
+}
+.form-group {
+    width: 160px;
+    height: 40px;
+    display: inline-block;
+}
+.form-group:nth-child(even) {
+    margin-left: 65px;
+}
+.contact-form {
+    width: 50%;
+    height: 575px;
+    display: inline-flex;
+    &__input_3 {
+        width: 380px;
+        height: 120px;
+        background-color: #f8f7f7;
+        border-top: 2px solid black;
+    }
+    &__input {
+        background-color: #f8f7f7;
+        border-top: 2px solid black;
+    }
+    &__message {
+        display: inline-block;
+        margin-top: 70px;
+    }
+}
+.text-1 {
+    display: block;
+    height: 73px;
+    line-height: 26px;
+    font-size: 14px;
+    font-weight: 300;
+}
+.text-2 {
+    margin-top: 45px;
+    display: block;
+    font-weight: 700;
+    font-size: 14px;
+}
+.icons-row {
+    &__elem {
+        width: 29px;
+        height: 29px;
+        background-image: url("../img/contact-icons/01.png");
+        display: inline-flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    margin-top: 30px;
+}
+.text-3 {
+    margin-top: 18px;
+    font-weight: 300;
+}
+.submit-form {
+    border: none;
+    background-color: transparent;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 45px;
+    text-align: right;
+    margin-left: 345px;
+}
+.footer-parners-wrapper {
+    display: inline-block;
+    width: 100%;
+}
+
